@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(176, 138, 144);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pages{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left{
+    width: 50%;
+    height: calc(100vh - 60px);
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    flex-direction:column ;
+    justify-content: center;
+    
+}
+.features{
+    width: 100%;
+    min-height: 90%;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    flex-direction:column ;
+    justify-content: center;
+}
+.ft{
+width: 80%;
+height: 50px;
+gap: 1rem;
+border-radius: 15px;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: rgb(203, 151, 160);
+}
+
+.ft label{
+    font-size: 20px;
+    color: rgb(97, 66, 69);
+    
+}
+.ft input{
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    border-bottom: 2px solid rgb(212, 187, 191);
+}
+
+.ft input::placeholder{
+    color: black;
+    opacity: 70%;
+}
+
+.right{
+    width: 50%;
+    height: calc(100vh - 60px);
+    background-color: pink;
+    display: flex;
+    float: right;
+    align-items: center;
+    justify-content: center;
+}
+.imgs{
+    width: 70%;
+    overflow: hidden;
+    animation-name: show;
+    animation-duration: 18s;
+    margin-top: 2.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation-iteration-count: infinite;
+    height: 70%;
+}
+.imgs img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+@keyframes show {
+    0%{
+        background-image: url(https://static.vecteezy.com/system/resources/thumbnails/048/028/197/small/a-beautiful-blonde-woman-with-long-hair-in-a-white-tshirt-looking-at-the-camera-and-smiling-photo.jpg);
+    }
+    33%{
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh1usOeWVOe6Ml8yMQOPZpj___GvhDcKEqHQ&s);
+    }
+    66%{
+        background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU2wMvHrgg0QgKiBkCddlE3gruDlViGsXJ7Q&s) ;
+    }
+    100%{
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTj5kkX4deU6eeBSTjd0gltKgQMvEgaY9sBg&s);
+    }
+}
+
+.procedure{
+    height: 200px;
+    width: 100%;
+    background-color: rgb(176, 138, 144);
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.procedure button{
+    padding: 1rem 2rem;
+    border:none;
+    font-size: 20px;
+    border-radius: 20px;
+    border-right: 5px solid rgb(165, 76, 91);
+    border-bottom: 5px solid rgb(165, 76, 91);
+}
+button:active{
+    border-left: 5px solid rgb(165, 76, 91);
+    border-top: 5px solid rgb(165, 76, 91);
+    border-right: 0;
+    border-bottom: 0;
+}
+
+.invoice{
+    width: 50vw;
+    z-index: 20;
+    position: fixed;
+    left: 50%;
+    display: none;
+    border-left: 5px solid rgb(196, 166, 171);
+    border-top: 5px solid rgb(196, 166, 171);
+    background-color: rgb(208, 99, 115);
+    border-radius: 40px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 80vh;
+}
+.invoice .close{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 10px;
+}
+.close button{
+    padding: .4rem .6rem;
+    border:none;
+    font-size: 15px;
+    border-radius: 16px;
+    border-right: 5px solid rgb(165, 76, 91);
+    border-bottom: 5px solid rgb(165, 76, 91);
+}
+.close button:active{
+    border-left: 5px solid rgb(165, 76, 91);
+    border-top: 5px solid rgb(165, 76, 91);
+    border-right: 0;
+    border-bottom: 0;
+}
+.quantities{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+    flex-direction: column;
+}
+.q1{
+    width: 63%;
+    height: 40px;
+    background-color: pink;
+    border-radius: 25px;
+    display: flex;
+    padding: 1rem 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.desc{
+    height:70px ;
+    overflow: auto;
+}
+
+.booking{
+ width: 100%;
+ height: 50px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.booking button{
+    padding: .4rem .6rem;
+    border:none;
+    font-size: 15px;
+    border-radius: 16px;
+    border-right: 5px solid rgb(165, 76, 91);
+    border-bottom: 5px solid rgb(165, 76, 91);
+}
+.booking button:active{
+    border-left: 5px solid rgb(165, 76, 91);
+    border-top: 5px solid rgb(165, 76, 91);
+    border-right: 0;
+    border-bottom: 0;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
